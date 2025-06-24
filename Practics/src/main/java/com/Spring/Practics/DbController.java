@@ -15,12 +15,12 @@ public class DbController {
         //to seen in Screen add dependency tomcat jasper
         return "hello";
     }
-    @GetMapping("m")
+    @GetMapping("/m")
     public String add(){
         return "bye bye";
     }
 
-    @GetMapping("{rollNo}")
+    @GetMapping("/get{rollNo}")
     public DBdto getdetails(@PathVariable(name = "rollNo") int rollno){
         return new DBdto(rollno,"Hello",23213432);
 

@@ -5,13 +5,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class Dbservice {
-//    @Autowired
-//  private  DevDb db;
-    private DB db;
-    Dbservice(DB db){
-        this.db=db;
-    }
-    public String getData() {
-        return db.getData();
+private final ProdDb prodDb;
+Dbservice(ProdDb prodDb){
+this.prodDb=prodDb;}
+
+
+    public boolean getData() {
+    return false;
     }
 }
